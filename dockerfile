@@ -13,4 +13,4 @@ RUN pip install --no-cache-dir --upgrade pip && \
 
 COPY . .
 
-CMD ["gunicorn", "app:server", "--bind", "0.0.0.0:$PORT"]
+CMD gunicorn app:server --bind 0.0.0.0:$PORT
