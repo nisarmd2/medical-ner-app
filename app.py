@@ -6,9 +6,6 @@ from transformers import AutoTokenizer, AutoModelForTokenClassification
 import base64
 import io
 import os
-from huggingface_hub import login
-
-login("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")
 
 # ── Load model ────────────────────────────────────────────────────────────────
 MODEL_PATH = "nisarmd2/ner-model"  
